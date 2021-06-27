@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Log in</title>
+</head>
+<style>
+      body{
+          text-align: center;
+          font-family: Arial;
+          }
+          
+      
+  </style>
+  <body>
+    
+  <div id="main">
+  <div class="h-tag">
+
+
+
+  <h3>Login Form</h3>
+  </div>
+
+
+  <div class="login">
+  <table cellspacing="2" align="center" cellpadding="8" border="0">
+  <tr>
+
+<form name="login">
+
+  <td> Enter Username :</td>
+  <td><input type="text" placeholder="kurt" id="username" class="tb" /></td>
+  </tr>
+  <tr>
+  <td>Enter Password :</td>
+  <td><input type="password" placeholder="kurt123" id="password" class="tb" /></td>
+  </tr>
+  <tr>
+  <td></td>
+  <td>
+
+  <input type="button" onclick="check(this.form)" value="Submit"/></td>
+
+  </tr>
+  </table>
+  </div>
+
+  </div>
+
+  <br>
+<br>
+<br>
+</form>
+<script>
+function check(form)
+{
+if(form.username.value == "kurt" && form.password.value == "kurt123")
+{
+window('newtab.html')
+}
+else
+{
+ alert("Error Password or Username")
+}
+}
+</script>
+
+
+</body>
+</html>
+
